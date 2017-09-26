@@ -26,7 +26,9 @@ RUN apt-get update && apt-get install -y \
   ros-indigo-gazebo-ros-pkgs \
   ros-indigo-gazebo-ros-control \
   ros-indigo-husky-simulator \
-  ros-indigo-rqt-graph
+  ros-indigo-rqt-graph \
+  ros-indigo-rviz \
+  ros-indigo-teleop-twist-keyboard
 
 RUN echo "export HUSKY_GAZEBO_DESCRIPTION=\$(rospack find husky_gazebo)/urdf/description.gazebo.xacro" >> /home/developer/.bashrc
 
