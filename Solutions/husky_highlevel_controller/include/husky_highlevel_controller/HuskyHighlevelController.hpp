@@ -1,6 +1,9 @@
 #pragma once
 
+#include "husky_highlevel_controller/Algorithm.hpp"
+
 #include <ros/ros.h>
+
 
 namespace husky_highlevel_controller {
 
@@ -9,18 +12,18 @@ namespace husky_highlevel_controller {
  */
 class HuskyHighlevelController {
 public:
-	/*!
-	 * Constructor.
-	 */
-	HuskyHighlevelController(ros::NodeHandle& nodeHandle);
+        /*!
+         * Constructor.
+         */
+        HuskyHighlevelController(ros::NodeHandle& nodeHandle);
 
-	/*!
-	 * Destructor.
-	 */
-	virtual ~HuskyHighlevelController();
+        /*!
+         * Destructor.
+         */
+        virtual ~HuskyHighlevelController();
 
 private:
-	ros::NodeHandle nodeHandle_;
+        ros::NodeHandle nodeHandle_;
 };
 
 } /* namespace */
